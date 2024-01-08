@@ -2,13 +2,13 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [title, setTitle] = useState("");
-  const [color, setColor] = useState("#000000");
+  const [title, setTitle] = useState("Type here...");
+  const [color, setColor] = useState("#D57D34");
   const submit = (e) => {
     e.preventDefault();
     alert(`${title}, ${color}`);
-    setTitle("");
-    setColor("#000000");
+    setTitle("Type here...");
+    setColor("#D57D34");
   };
   return (
     <form onSubmit={submit}>
